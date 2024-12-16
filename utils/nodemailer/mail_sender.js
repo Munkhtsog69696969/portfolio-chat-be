@@ -11,7 +11,7 @@ async function sendEmail(recieverEmail,payload,user) {
     "5m"
   )
 
-  const mailUrl=`${process.env.SERVER_ADDRESS}/mail_verify/${mailToken}`
+  const mailUrl=`https://portfolio-chat-be-3-12.onrender.com/mail_verify/${mailToken}`
 
   user.mail_verification_token=mailToken
 
