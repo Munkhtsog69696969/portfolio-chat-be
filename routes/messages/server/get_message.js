@@ -12,6 +12,7 @@ router.get('/', async (req, res) => {
     return res.status(400).json({ message: "User ID, server ID is required!" });
   }
 
+
   try {
     const server=await Server.findById(serverId)
 

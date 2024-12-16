@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
 
   try {
     const newMessage=new PrivateMessage({
-        receiverId,
+        recieverId,
         senderId:userId,
         message,
     })
